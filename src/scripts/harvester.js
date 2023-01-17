@@ -35,12 +35,12 @@ export const harvestPlants = (plantsInField) => {
         let times = plant.output
         let cornTimes = plant.output / 2
         if (plant.type === "Corn") {
-            for (let i = 0; i <= cornTimes ; i++) {
+            for (let i = 0; i < cornTimes ; i++) {
                 plantsHarvested.push(plant)
             }
         }
         else {
-            for (let i = 0; i <= times; i++) {
+            for (let i = 0; i < times; i++) {
                 plantsHarvested.push(plant)
             }
         }
